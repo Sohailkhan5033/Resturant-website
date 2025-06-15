@@ -1,0 +1,364 @@
+{
+  "admins": [
+    {
+      "id": "1",
+      "email": "abc",
+      "password": "12"
+    }
+  ],
+  "dishes": [
+    {
+      "id": "1",
+      "name": "Classic Burger",
+      "type": "burger",
+      "price": 8,
+      "image": "https://www.certifiedangusbeef.com/_next/image?url=https%3A%2F%2Fappetizing-cactus-7139e93734.media.strapiapp.com%2FThe_Chicago_Burger_41a6888826.jpeg&w=1080&q=75"
+    },
+    {
+      "id": "2",
+      "name": "Cheese Burger",
+      "type": "burger",
+      "price": 100,
+      "image": "https://media.istockphoto.com/id/495204032/photo/fresh-tasty-burger.jpg?s=612x612&w=0&k=20&c=k6X_gSHlo-WdKsqTnfBjoEbjdhrlz6RNhUs23ivpIxk="
+    },
+    {
+      "id": "3",
+      "name": "Spicy Burger",
+      "type": "burger",
+      "price": 1000,
+      "image": "https://www.burgerandsauce.com/wp-content/uploads/2021/02/burger-and-sauce-beef-burger-3000px2-1-1024x1024.png.webp"
+    },
+    {
+      "id": "4",
+      "name": "BBQ Burger",
+      "type": "burger",
+      "price": 11.99,
+      "image": "https://assets.bonappetit.com/photos/5b919cb83d923e31d08fed17/1:1/w_1600,c_limit/basically-burger-1.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Mushroom Burger",
+      "type": "burger",
+      "price": 9.99,
+      "image": "https://www.recipetineats.com/tachyon/2023/09/Crispy-fried-chicken-burgers_5.jpg?resize=900%2C1125&zoom=0.72"
+    },
+    {
+      "id": "6",
+      "name": "Pepperoni Pizza",
+      "type": "pizza",
+      "price": 12.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Pizza-3007395.jpg/500px-Pizza-3007395.jpg"
+    },
+    {
+      "id": "7",
+      "name": "Margherita Pizza",
+      "type": "pizza",
+      "price": 11.49,
+      "image": "https://www.hormel.com/brands/hormel-pepperoni/wp-content/uploads/sites/3/Recipes_2400_Pepperoni_Cup_Crips_Sweet_Spicy_Basil_Pep_Hot_Honey-1536x640.jpg?1748626666"
+    },
+    {
+      "id": "8",
+      "name": "BBQ Chicken Pizza",
+      "type": "pizza",
+      "price": 13.49,
+      "image": "https://cdn.shortpixel.ai/spai/q_lossy+w_629+h_629+to_webp+ret_img/www.mtolivepickles.com/wp-content/uploads/2024/05/ABC_MtOlive_BBQChickenPizza-1-copy_square.jpg"
+    },
+    {
+      "id": "9",
+      "name": "Veggie Pizza",
+      "type": "pizza",
+      "price": 10.99,
+      "image": "https://uk.ooni.com/cdn/shop/articles/TomatoRicotta-_Resized.jpg?v=1598525993&width=2048"
+    },
+    {
+      "id": "10",
+      "name": "Four Cheese Pizza",
+      "type": "pizza",
+      "price": 13.99,
+      "image": "https://www.bora.com/fileadmin/_processed_/2/b/csm_Pizza_1edbbde8a5.jpg.webp"
+    },
+    {
+      "id": "11",
+      "name": "Creamy Pasta",
+      "type": "pasta",
+      "price": 10.49,
+      "image": "https://cdn77-s3.lazycatkitchen.com/wp-content/uploads/2021/10/roasted-tomato-sauce-portion-800x1200.jpg"
+    },
+    {
+      "id": "12",
+      "name": "Pesto Pasta",
+      "type": "pasta",
+      "price": 9.99,
+      "image": "https://images.themodernproper.com/production/posts/PastaPrimavera_10.jpg?w=600&q=82&auto=format&fit=crop&dm=1719193287&s=1738462edeb0c04366d24491d017cfe1"
+    },
+    {
+      "id": "13",
+      "name": "Carbonara",
+      "type": "pasta",
+      "price": 11.99,
+      "image": "https://www.southernliving.com/thmb/91u1Q0mjE4er0svMGuWoDv5xF8M=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Microwave_Pasta_008-2cdc941e066d4b5a823de5fbf334d1f4.jpg"
+    },
+    {
+      "id": "14",
+      "name": "Alfredo Pasta",
+      "type": "pasta",
+      "price": 10.99,
+      "image": "https://majasrecipes.com/wp-content/uploads/2024/12/turkish-pasta.jpg"
+    },
+    {
+      "id": "15",
+      "name": "Spaghetti Bolognese",
+      "type": "pasta",
+      "price": 12.49,
+      "image": "https://www.vincenzosplate.com/wp-content/uploads/2021/08/610x350-Photo-4_862-How-to-Make-CHICKEN-PASTA-Like-an-Italian-V1.jpg.webp"
+    },
+    {
+      "id": "16",
+      "name": "Coca-Cola",
+      "type": "drink",
+      "price": 2.49,
+      "image": "https://www.politico.com/dims4/default/a2b46ae/2147483647/strip/true/crop/6000x4286+0+0/resize/630x450!/quality/90/?url=https%3A%2F%2Fstatic.politico.com%2F77%2F9c%2F15de328b4eb4b8b19d388614e72e%2Fhttps-delivery-gettyimages.com%2Fdownloads%2F1433950464"
+    },
+    {
+      "id": "17",
+      "name": "Pepsi",
+      "type": "drink",
+      "price": 2.49,
+      "image": "https://e3.365dm.com/23/03/1600x900/skynews-pepsi-cola_6102187.jpg?20230328114227"
+    },
+    {
+      "id": "18",
+      "name": "Sprite",
+      "type": "drink",
+      "price": 2.49,
+      "image": "https://cdn.jhattse.com/resize?width=256&url=https://jhattse.com/api/v1/file/?key=images/product/114716/108536/NZC2RYL0-Sprite-.jpeg.jpg&quality=75&type=webp"
+    },
+    {
+      "id": "19",
+      "name": "Fanta",
+      "type": "drink",
+      "price": 2.49,
+      "image": "https://marketing-interactive-assets.b-cdn.net/images/sg/content-images/tiktok/fanta_old_logo_refresh.jpg"
+    },
+    {
+      "id": "20",
+      "name": "Iced Tea",
+      "type": "drink",
+      "price": 3.49,
+      "image": "https://www.everydaycheapskate.com/wp-content/uploads/20240705-how-to-make-iced-tea-glass-with-ice-cubes-and-sliced-and-whole-lemons.png"
+    },
+    {
+      "id": "21",
+      "name": "Chicken Biryani",
+      "type": "biryani",
+      "price": 12.99,
+      "image": "https://onestophalal.com/cdn/shop/articles/fish_biryani-1701906057159_1200x.jpg?v=1701906108"
+    },
+    {
+      "id": "22",
+      "name": "Mutton Biryani",
+      "type": "biryani",
+      "price": 14.99,
+      "image": "https://kualalumpur.hyderabadrecipes.com.my/wp-content/uploads/2021/01/Special-chicken-Biryani.jpg"
+    },
+    {
+      "id": "23",
+      "name": "Veg Biryani",
+      "type": "biryani",
+      "price": 10.49,
+      "image": "https://bakewithzoha.com/wp-content/uploads/2024/03/chicken-biryani-5-scaled.jpg"
+    },
+    {
+      "id": "24",
+      "name": "Hyderabadi Biryani",
+      "type": "biryani",
+      "price": 13.99,
+      "image": "https://www.licious.in/blog/wp-content/uploads/2022/06/chicken-hyderabadi-biryani-01-750x750.jpg"
+    },
+    {
+      "id": "25",
+      "name": "Paneer Biryani",
+      "type": "biryani",
+      "price": 11.99,
+      "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/01/Chicken-Biryani.jpg"
+    },
+    {
+      "id": "26",
+      "name": "Chicken Tikka",
+      "type": "starter",
+      "price": 7.99,
+      "image": "https://obanhotel.pk/wp-content/webp-express/webp-images/uploads/2024/04/bestchickentikkainlahore.jpg.webp"
+    },
+    {
+      "id": "27",
+      "name": "Paneer Tikka",
+      "type": "starter",
+      "price": 6.99,
+      "image": "https://www.thespruceeats.com/thmb/lzigp9J5GJd5adSBgwWvOn9X6OE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/chicken-tikka-recipe-1957388-10-5b3fcf6646e0fb0037658a02.jpg"
+    },
+    {
+      "id": "28",
+      "name": "Veg Spring Rolls",
+      "type": "starter",
+      "price": 5.49,
+      "image": "https://www.betheshyft.com/_next/image/?url=https%3A%2F%2Fd1mxd7n691o8sz.cloudfront.net%2Fstatic%2Frecipe%2Frecipe%2F2023-12%2FVegetable-Spring-Rolls-2-1-906001560ca545c8bc72baf473f230b4_thumbnail_170.jpeg&w=1920&q=75"
+    },
+    {
+      "id": "29",
+      "name": "Chicken Wings",
+      "type": "starter",
+      "price": 8.49,
+      "image": "https://simplehomeedit.com/wp-content/uploads/2024/04/Loaded-Veg-Nachos-07-e1713249460896.webp"
+    },
+    {
+      "id": "30",
+      "name": "French Fries",
+      "type": "starter",
+      "price": 4.49,
+      "image": "https://whisperofyum.com/wp-content/uploads/2024/10/whisper-of-yum-homemade-french-fries-684x1024.jpg"
+    },
+    {
+      "id": "31",
+      "name": "chines Noodles",
+      "type": "Stater",
+      "price": 384,
+      "image": "https://healthynibblesandbits.com/wp-content/uploads/2019/12/Spicy-Noodles-with-Pan-Fried-Tofu-1.jpg"
+    }
+  ],
+  "clientsInfo": [
+    {
+      "id": "6462",
+      "name": "Sohail Ahmad",
+      "email": "ahamdsohail5033@gmail.com",
+      "phone": "10020101",
+      "address": "DUNIYA PUR",
+      "quantity": 1,
+      "paymentMethod": "cod",
+      "dishName": "Spicy Burger",
+      "pricePerItem": 10.49,
+      "total": 10.49
+    },
+    {
+      "id": "3ef1",
+      "name": "NAVEED AHMAD ",
+      "email": "naveedahmad.329@gmail.com",
+      "phone": "3027393099",
+      "address": "Bank al habib Teh Dunyapur  Dstt Lodhran ",
+      "quantity": 1,
+      "paymentMethod": "cod",
+      "dishName": "Pesto Pasta",
+      "pricePerItem": 9.99,
+      "total": 9.99
+    },
+    {
+      "id": "2c97",
+      "name": "sjjsd",
+      "email": "q983asa#@gmail.com",
+      "phone": "8029391",
+      "address": "lodhran",
+      "quantity": 1,
+      "paymentMethod": "easypaisa",
+      "dishName": "Sprite",
+      "pricePerItem": 2.49,
+      "total": 2.49
+    },
+    {
+      "id": "f5fb",
+      "name": "Spicy Burger",
+      "email": "sohailkhan503395@gmail.com",
+      "phone": "10020101",
+      "address": "adss",
+      "quantity": 1,
+      "paymentMethod": "cod",
+      "dishName": "Spicy Burger",
+      "pricePerItem": 10.49,
+      "total": 10.49
+    }
+  ],
+  "tableBookings": [
+    {
+      "id": "5978",
+      "name": "Sohail Ahmad",
+      "date": "2025-06-19",
+      "time": "18:28",
+      "duration": 5,
+      "tableType": "rectangle",
+      "seating": "sofa",
+      "section": "family",
+      "people": 2,
+      "totalPrice": 100,
+      "createdAt": "2025-06-14T08:19:34.575Z"
+    },
+    {
+      "id": "b302",
+      "name": "Sohail",
+      "date": "2025-06-20",
+      "time": "00:45",
+      "duration": 5,
+      "tableType": "round",
+      "seating": "sofa",
+      "section": "anniversary",
+      "people": 2,
+      "totalPrice": 110,
+      "createdAt": "2025-06-15T04:45:30.723Z"
+    }
+  ],
+  "reviews": [
+    {
+      "name": "Robert Pattison",
+      "review": "The food is amazing! I give it 5 stars.",
+      "rating": 5,
+      "date": "March 12, 2024 at 2:45 PM",
+      "id": "27fe"
+    },
+    {
+      "name": "Ellena",
+      "review": "The Chinese food is wow!",
+      "rating": 4,
+      "date": "April 5, 2024 at 6:30 PM",
+      "id": "4b42"
+    },
+    {
+      "name": "Michael Reed",
+      "review": "Excellent service and the ambiance was perfect.",
+      "rating": 5,
+      "date": "February 20, 2024 at 1:15 PM",
+      "id": "3ed6"
+    },
+    {
+      "name": "Linda Gomez",
+      "review": "The desserts were delicious, but the wait time was long.",
+      "rating": 3,
+      "date": "January 28, 2024 at 7:05 PM",
+      "id": "533c"
+    },
+    {
+      "name": "David Chen",
+      "review": "Great flavors and cozy environment. Will visit again.",
+      "rating": 4,
+      "date": "March 30, 2024 at 3:20 PM",
+      "id": "bce1"
+    },
+    {
+      "id": "b59a",
+      "name": "SOHAIL",
+      "review": "Very bad",
+      "rating": 1,
+      "date": "6/14/2025, 1:52:50 PM"
+    },
+    {
+      "id": "c6a8",
+      "name": "anything ",
+      "review": "nothingn",
+      "rating": 2,
+      "date": "6/15/2025, 9:43:56 AM"
+    }
+  ],
+  "users": [
+    {
+      "id": "e662",
+      "email": "omerajaml@gmail.com",
+      "password": "12345"
+    }
+  ]
+}

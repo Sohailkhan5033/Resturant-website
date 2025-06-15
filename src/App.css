@@ -1,0 +1,241 @@
+/* stylng for the web page */
+body{
+  background-color:  #ffeedb !important;
+}
+/* .container-hero-section{
+  border: 2px solid pink;
+} */
+.image{
+  margin-top:10px ;
+  margin-left: 20px;
+  height: 500px;
+  width:  500px;
+  border-radius: 10px;
+  box-shadow: 2px 2px ;
+ 
+}
+#first-image-div{
+  display: flex;
+
+}
+
+#second-image-div{
+margin-bottom: 20px;
+}
+
+#first-image{
+  border-radius: 5px;
+}
+.hero-image {
+  max-width: 100%;
+  height: auto;
+}
+.container h1{
+  margin-bottom: 30px;
+  
+}
+
+.food-card .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-card .card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+
+
+
+.food-card img {
+  height: 200px;
+  object-fit: cover;
+  display: flex;
+}
+/* #hero-paragrapgh{
+  margin-left: 20px;
+} */
+
+.modal-dialog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  max-width: 500px;
+  width: 100%;
+}
+/* #reviewsection{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+
+
+
+
+
+#footer {
+  background-color: #b22222;
+   color: #ffffff;
+padding: 20px 0;
+text-align: center;
+
+}
+
+  /* .food-card .card {
+    box-shadow: 2px 2px 10px blue;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .food-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 20px red;
+  } */
+  .menu-page {
+    background-color: #ffeedb;
+  }
+
+
+  /*booking table stytle */
+  /* General page background */
+body {
+  background-color: #eaf6ff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container for BookTable */
+.book-table-container {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+}
+
+/* Heading style */
+.book-table-container h2 {
+  color: #0077b6;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* Label styling */
+.book-table-container label {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Table grid styles */
+.table-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.table-box {
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  cursor: default;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Available Table */
+.table-available {
+  background-color: #38b000;
+}
+
+/* Booked Table */
+.table-booked {
+  background-color: #d90429;
+  cursor: not-allowed;
+}
+
+/* Table hover effect */
+.table-box:hover {
+  transform: scale(1.05);
+}
+
+/* Birthday / Anniversary Areas */
+.special-area {
+  background-color: #48cae4;
+}
+
+.special-booked {
+  background-color: #ff4d6d;
+  cursor: not-allowed;
+}
+
+/* Submit button hover effect */
+.btn-danger:hover {
+  background-color: #c1121f;
+}
+.alert-info {
+  background-color: #d8f1ff;
+  border-color: #b6e0f2;
+  color: #005c87;
+}
+
+.alert-danger {
+  background-color: #fbeaea;
+  border-color: #f5c2c7;
+  color: #8a1f2b;
+}
+/* In your App.css or style file */
+/* .btn-xs {
+  font-size: 12px;
+  padding: 4px 8px;
+  line-height: 1;
+} */
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease;
+}
+.btn-of-about {
+  position: relative;
+  top: -10px;   /* ✅ No quotes */
+  left: 10px;   /* ✅ No quotes */
+}
+
+.foodcard .card:hover {
+  background-color: #fff8f0;
+  transform: scale(1.03);
+  border: 1px solid #ffd8b3;
+box-shadow: 0 2px 6px rgba(255, 179, 102, 0.15);
+
+}
+.animate-expand{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #b22222;
+  font-size: 60px;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: expand 5s linear infinite;
+  margin: auto;
+  text-align: center;
+}
+
+@keyframes expand {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

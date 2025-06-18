@@ -76,7 +76,6 @@ export default function MenuPage() {
 
   return (
     <div className="container py-4 min-vh-100">
-      {/* Admin Login Modal */}
       {showLogin && (
         <div className="modal d-block" tabIndex="-1" style={{ background: "#00000088" }}>
           <div className="modal-dialog">

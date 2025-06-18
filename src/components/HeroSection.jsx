@@ -16,7 +16,7 @@ export default function HeroSection() {
             </p>
           </div>
           <div className="col-md-6 text-center">
-            <img src="shenkin.jpg" alt="Delicious food" className="img-fluid rounded shadow hero-image" />
+            <img src="/shenkin.jpg" alt="Delicious food" className="img-fluid rounded shadow hero-image" />
           </div>
         </div>
       </div>

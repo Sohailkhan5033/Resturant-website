@@ -117,7 +117,7 @@ export default function EditDishPage() {
 
           <div className="d-grid gap-2">
             <button className="btn btn-secondary" type="button" onClick={() => navigate("/menu")}>Cancel</button>
-            <button type="submit" className="btn btn-success">💾 Save Changes</button>
+            <button type="submit" className="btn btn-success">Save</button>
           </div>
         </form>
       </div>

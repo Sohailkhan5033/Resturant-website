@@ -62,7 +62,7 @@ export default function SignInModal() {
       {!isLoggedIn && (
         <section className="py-4" style={{ backgroundColor: '#f8f9fa' }}>
           <div className="container text-center">
-          <h2 class="animate-expand">Sign In for Special Discounts!</h2>
+          <h2 class="animate-expand">No discount will be given</h2>
             <button className="btn btn-info" data-bs-toggle="modal" data-bs-target="#signInModal">
               {isSignUp ? "Create Account" : "Sign In"}
             </button>

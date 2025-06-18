@@ -6,7 +6,8 @@ export default function Ambiance() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-md-6">
-            <img src="Outside.jpg" alt="Restaurant View" className="img-fluid rounded shadow" />
+          <img src="/Outside.jpg" alt="Restaurant View" className="img-fluid rounded shadow" />
+
           </div>
           <div className="col-md-6 mt-3">
             <h1>Our Ambiance</h1>

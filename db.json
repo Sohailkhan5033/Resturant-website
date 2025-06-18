@@ -273,6 +273,30 @@
       "dishName": "Spicy Burger",
       "pricePerItem": 10.49,
       "total": 10.49
+    },
+    {
+      "id": "e03d",
+      "name": "Sohail Ahmad",
+      "email": "ahamdsohail5033@gmail.com",
+      "phone": "8029391",
+      "address": "DUNIYA PUR",
+      "quantity": "5",
+      "paymentMethod": "jazzcash",
+      "dishName": "BBQ Chicken Pizza",
+      "pricePerItem": 13.49,
+      "total": 67.45
+    },
+    {
+      "id": "4a2b",
+      "name": "yousaf nazeer",
+      "email": "yousaf@gmail.com",
+      "phone": "10020101",
+      "address": "DUNIYA PUR",
+      "quantity": "2",
+      "paymentMethod": "cod",
+      "dishName": "Coca-Cola",
+      "pricePerItem": 2.49,
+      "total": 4.98
     }
   ],
   "tableBookings": [
@@ -347,11 +371,11 @@
       "date": "6/14/2025, 1:52:50 PM"
     },
     {
-      "id": "c6a8",
-      "name": "anything ",
-      "review": "nothingn",
-      "rating": 2,
-      "date": "6/15/2025, 9:43:56 AM"
+      "id": "1baf",
+      "name": "Furqan Asghar",
+      "review": "I love food and ambiance and i definally gonna come again.",
+      "rating": 5,
+      "date": "6/17/2025, 12:57:20 PM"
     }
   ],
   "users": [

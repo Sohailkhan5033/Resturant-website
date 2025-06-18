@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import {  HashRouter as Router, Routes, Route } from 'react-router-dom';
 import MenuPage from './components/MenuPage';
 import BookTable from './components/BookTable';
 import FrontPage from './components/FrontPage';

@@ -20,7 +20,7 @@ export default function MenuPage() {
       setIsAdmin(true);
     }
 
-    fetch("http://localhost:4000/dishes")
+   fetch("https://resturant-website-production-7209.up.railway.app/dishes")
       .then(res => res.json())
       .then(data => setDishes(data))
       .catch(err => console.error("Failed to load dishes:", err));

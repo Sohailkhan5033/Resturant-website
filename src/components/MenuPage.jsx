@@ -19,8 +19,7 @@ export default function MenuPage() {
     if (adminStatus === "true") {
       setIsAdmin(true);
     }
-
-   fetch("https://resturant-website-production-7209.up.railway.app/dishes")
+    fetch("https://resturant-website-production-b394.up.railway.app/dishes")
       .then(res => res.json())
       .then(data => setDishes(data))
       .catch(err => console.error("Failed to load dishes:", err));

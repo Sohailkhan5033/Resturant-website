@@ -20,7 +20,7 @@ export default function EditDishPage() {
     if (dish) {
       setForm(dish); // Use passed dish if available instantly
     } else {
-      axios.get(`http://localhost:4000/dishes/${id}`)
+      axios.get(`https://resturant-website-production-7209.up.railway.app/${id}`)
         .then(res => setForm(res.data))
         .catch(err => {
           console.error("Dish not found", err);
@@ -29,7 +29,7 @@ export default function EditDishPage() {
         });
     }
   }, [id, dish, navigate]);
-
+4000
   const handleSubmit = async (e) => {
     e.preventDefault();
   
@@ -48,7 +48,7 @@ export default function EditDishPage() {
   
     try {
       // Option A: PUT (full replacement)
-      await axios.put(`http://localhost:4000/dishes/${id}`, payload);
+      await axios.put(`https://resturant-website-production-7209.up.railway.app/${id}`, payload);
   
       // — or Option B: PATCH (partial update)
       // await axios.patch(`http://localhost:4000/dishes/${id}`, payload);

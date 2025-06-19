@@ -7,7 +7,7 @@ export default function AddDishPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch("http://localhost:4000/dishes", {
+    await fetch("https://resturant-website-production-7209.up.railway.app/dishes", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...form, price: parseFloat(form.price) })

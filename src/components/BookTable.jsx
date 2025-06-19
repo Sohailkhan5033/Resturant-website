@@ -81,7 +81,7 @@ export default function BookTable() {
   
       if (!res.ok) throw new Error("Failed to book table");
   
-      alert(`✅ Table booked successfully for ${formData.name}`);
+      alert(` Table booked successfully for ${formData.name}`);
   
       // Reset form
       setFormData({

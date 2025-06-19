@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from './images/Logo.png';
 
 
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-md navbar-dark" style={{ backgroundColor: '#b22222' }}>
       <div className="container">
-        <img src={logo} alt="Logo" className="img-fluid" style={{ maxHeight: '60px' }} />
+      <img src="/Resturant-website/images/Logo.png" className="img-fluid" style={{ maxHeight: '60px' }} />
         <Link className="navbar-brand" to="/">Foodie Place</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
           <span className="navbar-toggler-icon"></span>

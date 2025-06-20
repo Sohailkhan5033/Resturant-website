@@ -1,21 +1,23 @@
 {
+  "main": "server.js",
   "name": "finalproject",
-  "homepage": "https://sohailkhan5033.github.io/Resturant-website",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "private": true,
+  "homepage": "https://sohailkhan5033.github.io/Resturant-website",
   "scripts": {
-     "start": "json-server --watch db.json --port 4000",
+   "start": "node server.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-      "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "axios": "^1.10.0",
     "bootstrap": "^5.3.6",
+    "cors": "^2.8.5",
+    "json-server": "^0.17.4",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.2"

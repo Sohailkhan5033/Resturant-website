@@ -8,12 +8,11 @@ const server = jsonServer.create();
 const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
-server.use(cors({ origin: '*' })); // ✅ Allow all origins
+// ✅ Allow CORS from anywhere
+server.use(cors());
+server.options('*', cors()); // Preflight CORS
+
 server.use(middlewares);
-server.use('/dishes', (req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "*");
-  next();
-});
 server.use(router);
 
 const PORT = process.env.PORT || 4000;

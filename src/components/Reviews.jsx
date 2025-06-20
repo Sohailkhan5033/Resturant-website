@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 // Backend endpoint for reviews (adjust IP if testing on mobile)
-const API_URL = "http://localhost:4000/reviews"; // or your IP like 
+const API_URL = "https://resturant-website-production-7209.up.railway.app/reviews"; // or your IP like 
 
 export default function Reviews() {
   const [reviews, setReviews] = useState([]);
@@ -9,7 +9,7 @@ export default function Reviews() {
 
   // 🔄 Fetch reviews when component loads
   useEffect(() => {
-    fetch("http://localhost:4000/reviews")
+    fetch("https://resturant-website-production-7209.up.railway.app/reviews")
       .then(res => res.json())
       .then(data => setReviews(data)) // save fetched reviews to state
       .catch(err => console.error("Error fetching reviews:", err));

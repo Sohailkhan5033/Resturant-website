@@ -1,11 +1,11 @@
 {
-  "main": "server.js",
+  "main": "index.js",
   "name": "finalproject",
   "version": "0.0.0",
   "private": true,
   "homepage": "https://sohailkhan5033.github.io/Resturant-website",
   "scripts": {
-   "start": "node server.js",
+   "start": "node index.js",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",

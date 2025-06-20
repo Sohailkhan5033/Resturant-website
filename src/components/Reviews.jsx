@@ -31,7 +31,7 @@ export default function Reviews() {
     };
 
     // ⬆️ Send review to backend using POST request
-    fetch("http://localhost:4000/reviews", {
+    fetch("https://resturant-website-production-7209.up.railway.app/reviews", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(newReview)

@@ -10,7 +10,7 @@ export default function PopularDishes() {
   useEffect(() => {
     const fetchDishes = async () => {
       try {
-        const response = await axios.get('http://localhost:4000/dishes');
+        const response = await axios.get('https://resturant-website-production-7209.up.railway.app/dishes');
         const popularIds = ['1', '8', '15', '25']; // your selected dish IDs
         const filtered = response.data.filter(d => popularIds.includes(d.id.toString()));
         setDishes(filtered);

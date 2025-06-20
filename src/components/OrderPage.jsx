@@ -35,7 +35,7 @@ export default function OrderPage() {
       total: dish.price * formData.quantity,
     };
 
-    fetch("http://localhost:4000/clientsInfo", {
+    fetch("https://resturant-website-production-7209.up.railway.app/clientsInfo", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"

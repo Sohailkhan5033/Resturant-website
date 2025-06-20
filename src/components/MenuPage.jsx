@@ -36,7 +36,7 @@ export default function MenuPage() {
 
   const handleAdminLogin = async () => {
     try {
-      const res = await fetch("http://localhost:4000/admins");
+      const res = await fetch("https://resturant-website-production-7209.up.railway.app/admins");
       const data = await res.json();
       const admin = data.find(
         a => a.email === adminCredentials.email && a.password === adminCredentials.password
@@ -59,7 +59,7 @@ export default function MenuPage() {
     if (!window.confirm("Are you sure to delete this dish?")) return;
 
     try {
-      const res = await fetch(`http://localhost:4000/dishes/${dishToDelete.id}`, { method: "DELETE" });
+      const res = await fetch(`https://resturant-website-production-7209.up.railway.app/dishes/${dishToDelete.id}`, { method: "DELETE" });
       if (res.ok) {
         setDishes(prev => prev.filter(d => d.id !== dishToDelete.id));
       } else throw new Error("Delete request failed");

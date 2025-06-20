@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+const BASE_URL = import.meta.env.MODE === "development"
+  ? "http://localhost:4000"
+  : "https://resturant-website-production-b394.up.railway.app";
+
 
 export default function AddDishPage() {
   const navigate = useNavigate();
@@ -7,7 +11,7 @@ export default function AddDishPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch("https://resturant-website-production-7209.up.railway.app/dishes", {
+    await fetch(`${BASE_URL}/dishes`,       {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...form, price: parseFloat(form.price) })

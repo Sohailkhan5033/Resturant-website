@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+const BASE_URL = import.meta.env.MODE === "development"
+  ? "http://localhost:4000"
+  : "https://resturant-website-production-b394.up.railway.app";
+
 
 export default function SignInModal() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);  // ✅ To hide Sign In section after login
@@ -15,7 +19,7 @@ export default function SignInModal() {
       setIsLoggedIn(true); // ✅ Hide section after login
     } else {
       try {
-        const res = await fetch(`https://resturant-website-production-7209.up.railway.app/users?email=${email}`);
+        const res = await fetch(`${BASE_URL} /users?email=${email}`);
         const data = await res.json();
 
         if (!isSignUp) {
@@ -31,7 +35,7 @@ export default function SignInModal() {
           if (data.length > 0) {
             alert("Account already exists! Please sign in.");
           } else {
-            const register = await fetch(`https://resturant-website-production-7209.up.railway.app/users`, {
+            const register = await fetch(`${BASE_URL}/users`, {
               method: "POST",
               headers: { "Content-Type": "application/json" },
               body: JSON.stringify({ email, password })

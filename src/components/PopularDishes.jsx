@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+const URL =
+  import.meta.env.MODE === "development"
+    ? "http://localhost:4000/dishes"
+    : "https://resturant-website-production-b394.up.railway.app/dishes";
+
 
 export default function PopularDishes() {
   const [dishes, setDishes] = useState([]);
@@ -10,7 +15,7 @@ export default function PopularDishes() {
   useEffect(() => {
     const fetchDishes = async () => {
       try {
-        const response = await axios.get('https://resturant-website-production-b394.up.railway.app/dishes');
+        const response = await axios.get(URL);
         const popularIds = ['1', '8', '15', '25']; // your selected dish IDs
         const filtered = response.data.filter(d => popularIds.includes(d.id.toString()));
         setDishes(filtered);

@@ -1,7 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
+const URL =
+  import.meta.env.MODE === "development"
+    ? "http://localhost:4000/dishes"
+    : "https://resturant-website-production-b394.up.railway.app/dishes";
 
+    const BASE_URL =
+    import.meta.env.MODE === "development"
+      ? "http://localhost:4000"
+      : "https://resturant-website-production-b394.up.railway.app"; // 🛠️ Use same live domain for all
+  
 export default function MenuPage() {
   const [dishes, setDishes] = useState([]);
   const [filter, setFilter] = useState("");
@@ -19,7 +28,7 @@ export default function MenuPage() {
     if (adminStatus === "true") {
       setIsAdmin(true);
     }
-    fetch("https://resturant-website-production-b394.up.railway.app/dishes")
+    fetch(URL)
       .then(res => res.json())
       .then(data => setDishes(data))
       .catch(err => console.error("Failed to load dishes:", err));
@@ -35,7 +44,7 @@ export default function MenuPage() {
 
   const handleAdminLogin = async () => {
     try {
-      const res = await fetch("https://resturant-website-production-7209.up.railway.app/admins");
+      const res = await fetch(`${BASE_URL}/admins`);
       const data = await res.json();
       const admin = data.find(
         a => a.email === adminCredentials.email && a.password === adminCredentials.password
@@ -58,7 +67,7 @@ export default function MenuPage() {
     if (!window.confirm("Are you sure to delete this dish?")) return;
 
     try {
-      const res = await fetch(`https://resturant-website-production-7209.up.railway.app/dishes/${dishToDelete.id}`, { method: "DELETE" });
+      const res = await fetch(`BASE_URL${dishToDelete.id}`, { method: "DELETE" });
       if (res.ok) {
         setDishes(prev => prev.filter(d => d.id !== dishToDelete.id));
       } else throw new Error("Delete request failed");

@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+const BASE_URL = import.meta.env.MODE === "development"
+  ? "http://localhost:4000"
+  : "https://resturant-website-production-b394.up.railway.app";
+
 
 const bookedTables = [2, 5, 7, 9];
 const bookedBirthdayAreas = [1];
@@ -71,7 +75,7 @@ export default function BookTable() {
     };
   
     try {
-      const res = await fetch("http://192.168.100.8:4000/tableBookings", {
+      const res = await fetch(`${BASE_URL}/tableBookings`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

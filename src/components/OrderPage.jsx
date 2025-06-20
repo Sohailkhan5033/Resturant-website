@@ -3,6 +3,9 @@ import { useLocation, useNavigate } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const BASE_URL = import.meta.env.MODE === "development"
+  ? "http://localhost:4000"
+  : "https://resturant-website-production-b394.up.railway.app";
 
 export default function OrderPage() {
   const location = useLocation();
@@ -35,7 +38,7 @@ export default function OrderPage() {
       total: dish.price * formData.quantity,
     };
 
-    fetch("https://resturant-website-production-7209.up.railway.app/clientsInfo", {
+    fetch(`${BASE_URL}/clientsInfo`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
